@@ -7,14 +7,15 @@ license = "GPLv3"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+requestr = { git = "https://github.com/granitosaurus/requestr.git", branch="main"}
 fastapi = "^0.70.0"
 python-Wappalyzer = "^0.3.1"
-requestr = {path = "../requestr"}
 parsel = "^1.6.0"
 uvicorn = "^0.15.0"
 newspaper3k = "^0.2.8"
 redis = "^3.5.3"
 Brotli = "^1.0.9"
+slowapi = "^0.1.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
