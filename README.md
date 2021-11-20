@@ -1,3 +1,17 @@
 # Interactive CV of Granitosaur.us
 
-This is a fun interactive CV project where employer may enter their internet resources and CV bot will scrape tech and keyword data to generate personal opinion/experience data.
+This is a fun interactive CV project I made that takes in some urls from potential employer and analyzes them for keywords from which some personal opinions/facts are inferred.
+
+![screenshot](./screenshot.png)
+
+
+### Run/Deploy
+
+This project uses docker, primarily docker compose:
+```
+$ docker-compose up
+```
+Alternative it cna be deployed to kubernetes:
+```
+$ kubectl apply -f k8/
+```
