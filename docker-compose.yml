@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    depends_on:
+      - cache
+    environment:
+      REDIS_HOST: "redis"
+    build: .
+    volumes: 
+      - .:/app
+    ports:
+      - "5000:5000"
+
+  redis:
+    image: "redis:alpine"
+    restart: always
