@@ -3,7 +3,7 @@
     <style type="text/css">
         div.content {
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 65ch;
         }
         
         .socials, #intro {
@@ -131,7 +131,7 @@
         }
 
          
-        const api = "http://127.0.0.1:8000/scrape"
+        const api = "/scrape"
 
         async function postData(url = '', data = {}) {
             console.log('fetching url ' + url)
@@ -226,13 +226,13 @@
 <body>
     <div class="content box">
         <div id="intro">
-            <div id="intro-img">
-                <img src="https://granitosaur.us/images/author.jpg" width="300px">
+            <div id="intro-img" class="image is-128x128">
+                <img class="is-rounded" src="https://granitosaur.us/images/author.jpg" width="300px">
             </div>
             <div id="intro-text">
             <p>Ahoy, </p>
             <p>I'm Bernard and if you're looking for a data hacker you came to the right place!</p>
-            <p>I'll tell you a bit about myself but first let's do the fun automation stuff!</p>
+            <p>I'll tell you a bit about myself, but first let's have 🤖 do some fun automation stuff!</p>
             </div>
         </div>
         <hr>
@@ -240,24 +240,25 @@
             <div>
                 <h2>Let's get to know each other!</h2>
             </div>
-            <p>This tiny scraper project will collect data from your sources and shares some of my experiences/opinions. Give it a shot?
+            <p>🤖: Hello, I'm Robo, and I'll be working to introduce you two! If you could give me some web sources I can analyze them and run a little introduction!</p>
             </p>
-            <div><input class="input" type="text" id="homepage" placeholder="your product's homepage? e.g. nolk.com">
+            <div><input class="input" type="text" id="homepage" placeholder="your product's homepage? e.g. company.com">
             </div>
-            <div><input class="input" type="text" id="job-url" placeholder="do you have a job listing?"></div>
+            <div><input class="input" type="text" id="job-url" placeholder="do you have a job listing? e.g. https://www.remotepython.com/jobs/8633529c6e5240cba5c4ba91d000d3a0/"></div>
             <div>
                 <button class="button" onclick=load_messages(get_messages())>🤖 initiate bonding 🤖</button>
-                <button class="button" onclick=load_messages([get_random_fact()])>📖 just tell me a random fun fact 📖</button></div>
+                <button class="button" onclick=load_messages([get_random_fact()])>📖 just tell me a random fun fact about Bernard 📖</button></div>
         </div>
         <div id="knowledge">
         </div>
+        <p class="is-size-5">🤖: You can find my source code <a href="https://github.com/granitosaurus/employme">on github</a> :)</p>
         <hr>
         <div>
             <h2>Let's connect!</h2>
         </div>
         <div id="cv">
             <p>Right, so a bit about myself if the 🤖 didn't it's job well</p>
-            <p>I've been a data hacker for 8 years now. Started off automating data entry and web scraping for folks on odesk back in college.</p>
+            <p>I've been a data hacker for 8 years now. Started off automating data entry and web scraping for folks on freelance platforms back in college.</p>
             <p>Found my place with the beautiful folk of <code>scrapy</code> at Scrapinghub (currently Zyte.com). Grew with them together in the rich world of web-scraping.</p>
             <p>From there I helped out a bunch of small companies get there foothold through web-scraping their startup datasets and joined Oxydata - Lithuanian data startup.</p>
             <p>We scrapped a bunch of public data aggregators (Linkedin, Crunchbase etc.) for lead custom lead generation. These harder targets really grew my reverse-engineering skills and I ended up joining Argyle - a startup I helped to reverse engineer employment platforms/apps so we could help our customers to liberate their financial data.</p>
@@ -277,6 +278,7 @@
                     <ul>
                         <li><a href="https://github.com/granitosaurus">github</a></li>
                         <li><a href="https://stackoverflow.com/story/granitosaurus">stackoverflow</a></li>
+                        <li><a href="https://www.reddit.com/user/scrapecrow">reddit</a></li>
                         <li><a href="mailto:bernard@scrapecrow.com">email</a></li>
                         <li><a href="https://granitosaur.us">blog</a></li>
                         <li><a href="https://scrapecrow.com">current main project: scrapecrow.com</a></li>
