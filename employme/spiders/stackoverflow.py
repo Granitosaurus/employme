@@ -9,6 +9,9 @@ from employme.items import Knowledge
 
 
 class StackoverflowSpider(Spider):
+    """
+    Spider for stackoverflow jobs
+    """
     name = "stackoverflow"
     url_search = "https://stackoverflow.com/jobs?q={query}".format
     url_listing = "https://stackoverflow.com/jobs/{job_id}".format

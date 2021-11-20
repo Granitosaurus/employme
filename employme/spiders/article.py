@@ -27,15 +27,3 @@ class ArticleSpider(Spider):
                 scraper=self.name,
             )
         ]
-
-
-# TODO: move these to tests
-if __name__ == "__main__":
-    import asyncio
-
-    scraper = ArticleSpider()
-    asyncio.run(
-        scraper.scrape(
-            "https://stackoverflow.com/jobs/547896/back-end-developer-python-nolk?so=i"
-        )
-    )

@@ -4,6 +4,7 @@ from requestr import Downloader
 
 
 class Spider:
+    """Base spdier class that all spiders should inherit from"""
     name = NotImplemented
 
     def __init__(self) -> None:
